@@ -1,4 +1,4 @@
-package selenide.common_module.driver;
+package common_module.driver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

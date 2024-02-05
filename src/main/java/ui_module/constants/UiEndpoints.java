@@ -1,12 +1,7 @@
-package selenide.ui_module.constants;
+package ui_module.constants;
 
 public enum UiEndpoints {
-    BASE("https://demoqa.com"),
-    BOOKS("https://demoqa.com/books"),
-    LOGIN("https://demoqa.com/login"),
-    REGISTER("https://demoqa.com/register"),
-    PROFILE("https://demoqa.com/profile"),
-    BOOK_STORE_PAGE("https://demoqa.com/books");
+    PITER("https://piter-online.net/");
 
     private final String url;
 

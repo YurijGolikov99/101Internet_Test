@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ConnectPage {
+public class PiterOnlinePage {
     private WebDriver driver;
 
     @FindBy(xpath = "(//input[@datatest='main_input_street_home_new'])[1]")
@@ -21,7 +21,7 @@ public class ConnectPage {
     @FindBy(xpath = "(//div[contains(@class, 'app112')])[2]")
     public WebElement tariffsButton;
 
-    public ConnectPage(String url) {
+    public PiterOnlinePage(String url) {
         this.driver = DriverProvider.getDriver();
         this.driver.get(url);
         PageFactory.initElements(driver, this);

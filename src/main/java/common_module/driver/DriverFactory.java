@@ -1,17 +1,16 @@
-package selenide.common_module.driver;
+package common_module.driver;
 
 import org.openqa.selenium.WebDriver;
 
 import java.util.concurrent.TimeUnit;
 
-import static selenide.common_module.Global.CHROME_NAME;
-import static selenide.common_module.Global.FIREFOX_NAME;
-import static selenide.common_module.Global.SAFARI_NAME;
-import static selenide.common_module.Global.WEBDRIVER_TYPE;
-import static selenide.common_module.utils.TimeOuts.ELEMENT_TIMEOUT;
-import static selenide.common_module.utils.TimeOuts.PAGE_LOAD_TIMEOUT;
+import static common_module.Global.CHROME_NAME;
+import static common_module.Global.FIREFOX_NAME;
+import static common_module.Global.SAFARI_NAME;
+import static common_module.Global.WEBDRIVER_TYPE;
+import static common_module.utils.TimeOuts.ELEMENT_TIMEOUT;
+import static common_module.utils.TimeOuts.PAGE_LOAD_TIMEOUT;
 
-//4 создали порядок и настройки объявления веб-драйвера
 public class DriverFactory {
 
     static WebDriver launchDriver() {
@@ -23,8 +22,6 @@ public class DriverFactory {
         } else if (WEBDRIVER_TYPE.equalsIgnoreCase(SAFARI_NAME)) {
             driver = SafariLauncher.createDriver();
         } else {
-            // Если не указан Chrome, Firefox или Safari, можно выбрать другой драйвер по умолчанию
-            // Например, можно использовать Chrome
             driver = ChromeLauncher.createDriver();
         }
 
